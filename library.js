@@ -1,14 +1,19 @@
 const mylibrary = [];
 
-function Book (title, author, year, read){
-    this.title = title;
-    this.author = author;
-    this.year = year;
-    this.read = read;
-    this.info = function(){
-        const readstatus = this.read?'read':'not read yet'
-        return `${this.title} by ${this.author}, ${this.year} year, ${readstatus}`;
+class Book {
+
+    constructor(title, author, year, read){
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.read = read;
+        this.info = function(){
+            const readstatus = this.read?'read':'not read yet'
+            return `${this.title} by ${this.author}, ${this.year} year, ${readstatus}`;
+        }
     }
+   
+    
 }
 
 
